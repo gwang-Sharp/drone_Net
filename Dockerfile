@@ -1,7 +1,7 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
-WORKDIR /app
+WORKDIR /drone/src
 EXPOSE 8080
 EXPOSE 443
 
@@ -11,12 +11,11 @@ COPY ["droneService.csproj", "."]
 RUN dotnet restore "./droneService.csproj"
 COPY . .
 WORKDIR "/drone/src/."
-RUN dotnet build "droneService.csproj" -c Release -o /drone/src/build
+RUN dotnet build "droneService.csproj"
 
 FROM build AS publish
-RUN dotnet publish "droneService.csproj" -c Release -o /drone/src/publish /p:UseAppHost=false
+RUN dotnet publish "droneService.csproj"
 
 FROM base AS final
 WORKDIR /drone/src
-COPY --from=publish /drone/src/publish .
-ENTRYPOINT ["dotnet", "./drone/src/bin/Release/net7.0/droneService.dll"]
+ENTRYPOINT ["nohup ","dotnet", "./bin/Debug/net7.0/droneService.dll"]
