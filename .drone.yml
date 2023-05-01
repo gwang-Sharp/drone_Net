@@ -5,3 +5,4 @@ name: default
 steps:
 - name: buildProject
   image: droneservice
+  pull: if-not-exists
