@@ -3,7 +3,11 @@ type: docker
 name: default
 
 steps:
-- name: test
+- name: pullSdk
+  image: mcr.microsoft.com/dotnet/sdk:7.0
+  pull: if-not-exists
+
+- name: buildProject
   image: mcr.microsoft.com/dotnet/aspnet:7.0
   pull: if-not-exists
   commands:
