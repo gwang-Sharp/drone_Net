@@ -4,9 +4,4 @@ name: default
 
 steps:
 - name: buildProject
-  image: mcr.microsoft.com/dotnet/sdk:7.0
-  commands:
-  - dotnet build
-  - dotnet publish
-  - dotnet /drone/src/bin/Debug/net7.0/droneService.dll
-  - echo 'Æô¶¯Íê±Ï'
+  image: droneservice
