@@ -3,7 +3,7 @@ type: docker
 name: default
 
 workspace:
-  path: /src
+  path: /drone/src
   
 steps:
 - name: buildProject
