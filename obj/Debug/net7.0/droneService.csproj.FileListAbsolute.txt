@@ -31,3 +31,4 @@ F:\练习\7.0\drone\default\droneService\obj\Debug\net7.0\refint\droneService.dl
 F:\练习\7.0\drone\default\droneService\obj\Debug\net7.0\droneService.pdb
 F:\练习\7.0\drone\default\droneService\obj\Debug\net7.0\droneService.genruntimeconfig.cache
 F:\练习\7.0\drone\default\droneService\obj\Debug\net7.0\ref\droneService.dll
+F:\练习\7.0\drone\default\droneService\bin\Debug\net7.0\.drone.yml
