@@ -5,13 +5,10 @@ name: default
 steps:
 - name: pullSdk
   image: mcr.microsoft.com/dotnet/sdk:7.0
-  pull: if-not-exists
 
 - name: buildProject
   image: mcr.microsoft.com/dotnet/aspnet:7.0
-  pull: if-not-exists
   commands:
-  - dotnet restore "./droneService.csproj"
   - dotnet restore "./droneService.csproj"
   - dotnet build "droneService.csproj" -c Release -o /app/build
   - dotnet publish "droneService.csproj" -c Release -o /app/publish /p:UseAppHost=false
