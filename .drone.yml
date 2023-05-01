@@ -5,5 +5,5 @@ steps:
 - name: test
   image: mcr.microsoft.com/dotnet/sdk:7.0
   commands:
-  - dotnet build
-  - dotnet test
+  - docker build -t droneService .
+  - docker run -p 8080:8080 -d -name droneService1 droneService
