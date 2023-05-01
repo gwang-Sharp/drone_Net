@@ -9,7 +9,6 @@ steps:
 - name: buildProject
   image: mcr.microsoft.com/dotnet/aspnet:7.0
   commands:
-  - dotnet restore "./droneService.csproj"
-  - dotnet build "droneService.csproj" -c Release -o /app/build
-  - dotnet publish "droneService.csproj" -c Release -o /app/publish /p:UseAppHost=false
+  - dotnet build
+  - dotnet publish
   - dotnet droneService.dll
