@@ -4,8 +4,8 @@ name: default
 
 steps:
 - name: test
-  image: droneService
+  image: droneservice
   pull: never
   commands:
-  - build -t droneService .
-  - run -p 8080:8080 -d -name droneService1 droneService
+  - build -t droneservice .
+  - run -p 8080:8080 -d -name droneService1 droneservice
