@@ -27,7 +27,7 @@ namespace droneService.Controllers
         public async Task<IActionResult> Get()
         {
             //?code=f5f9967b17b7f040e807&state=d5104dc76695721d
-            var requet = contextAccessor!.HttpContext.Request;    
+            var requet = contextAccessor!.HttpContext.Request;      
             var code = requet.Query["code"].ToString();
             var client = clientFactory.CreateClient();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
