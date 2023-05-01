@@ -8,4 +8,4 @@ steps:
   commands:
   - dotnet build
   - dotnet publish
-  - dotnet ./drone/src/bin/Debug/net7.0/droneService.dll
+  - dotnet /drone/src/bin/Debug/net7.0/droneService.dll
