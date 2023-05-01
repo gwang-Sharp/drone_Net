@@ -3,12 +3,9 @@ type: docker
 name: default
 
 steps:
-- name: pullSdk
-  image: mcr.microsoft.com/dotnet/sdk:7.0
-
 - name: buildProject
   image: mcr.microsoft.com/dotnet/aspnet:7.0
   commands:
   - dotnet build
   - dotnet publish
-  - dotnet droneService.dll
+  - dotnet ./drone/src/bin/Debug/net7.0/droneService.dll
