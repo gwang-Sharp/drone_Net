@@ -6,17 +6,17 @@ EXPOSE 8080
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-WORKDIR /src
+WORKDIR /drone/src
 COPY ["droneService.csproj", "."]
 RUN dotnet restore "./droneService.csproj"
 COPY . .
-WORKDIR "/src/."
-RUN dotnet build "droneService.csproj" -c Release -o /app/build
+WORKDIR "/drone/src/."
+RUN dotnet build "droneService.csproj" -c Release -o /drone/src/build
 
 FROM build AS publish
-RUN dotnet publish "droneService.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "droneService.csproj" -c Release -o /drone/src/publish /p:UseAppHost=false
 
 FROM base AS final
-WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "droneService.dll"]
+WORKDIR /drone/src
+COPY --from=publish /drone/src/publish .
+ENTRYPOINT ["dotnet", "./drone/src/bin/Release/net7.0/droneService.dll"]
