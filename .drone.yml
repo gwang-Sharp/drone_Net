@@ -5,7 +5,10 @@ name: default
 steps:
 - name: test
   image: mcr.microsoft.com/dotnet/aspnet:7.0
-  pull: never
+  pull: if-not-exists
   commands:
-  - build -t droneservice .
-  - run -p 8080:8080 -d -name droneService1 droneservice
+  - dotnet restore "./droneService.csproj"
+  - dotnet restore "./droneService.csproj"
+  - dotnet build "droneService.csproj" -c Release -o /app/build
+  - dotnet publish "droneService.csproj" -c Release -o /app/publish /p:UseAppHost=false
+  - dotnet droneService.dll
