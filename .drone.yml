@@ -1,9 +1,9 @@
 kind: pipeline
-type: exec
+type: docker
 name: default
 
 steps:
 - name: test
   commands:
-  - docker build -t droneService .
-  - docker run -p 8080:8080 -d -name droneService1 droneService
+  - build -t droneService .
+  - run -p 8080:8080 -d -name droneService1 droneService
