@@ -47,7 +47,7 @@ namespace droneService.Controllers
                 { "client_id", "695f5f5a39e8e280102b" },
                 { "client_secret", "08797088d803ba7038b862ee08e68a3632e64ce2" },
                 { "code", code },
-                //{ "redirect_uri", "http://fi9vru.natappfree.cc/index" }
+                //{ "redirect_uri", "http://fi9vru.natappfree.cc/index" }   
             };
             return jsonDic;
         }
