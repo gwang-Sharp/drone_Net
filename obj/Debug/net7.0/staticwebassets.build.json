@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "N+Pw0Md8zvfA5oVzBqEkOfCsCa4kYLfQ3ikuxpZPK/Y=",
+  "Source": "droneService",
+  "BasePath": "_content/droneService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

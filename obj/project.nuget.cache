@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "R4fFLisrcCJ2QcDZt3oTYGvxfR/r2y7cx7LihEaYN1nu9W0EZmrOd/juTqdj5w6JP/Xg7tvEvIqDNEjoKiQMOQ==",
+  "success": true,
+  "projectFilePath": "F:\\练习\\7.0\\drone\\default\\droneService\\droneService.csproj",
+  "expectedPackageFiles": [
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Nuget\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Nuget\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Nuget\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Nuget\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Nuget\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Nuget\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Nuget\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Nuget\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
