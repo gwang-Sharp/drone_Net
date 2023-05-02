@@ -8,4 +8,6 @@ workspace:
 steps:
 - name: buildProject
   image: droneservice
+  network_mode: bridge
+  detach: true
   pull: if-not-exists
