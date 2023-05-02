@@ -1,15 +1,13 @@
 kind: pipeline
-type: docker
+type: ssh
 name: default
 
-workspace:
-  path: /drone/src
   
+server:
+  host: 192.168.30.129
+  user: root
+  password: wg380717.
 steps:
 - name: buildProject
-  image: mcr.microsoft.com/dotnet/aspnet:7.0
-  pull: if-not-exists
   commands:
-  - /bin/bash
-  - chmod a+x build.sh
-  - sh build.sh
+  - docker ps
