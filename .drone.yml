@@ -7,6 +7,8 @@ workspace:
   
 steps:
 - name: buildProject
-  image: droneservice
-  detach: true
+  image: mcr.microsoft.com/dotnet/aspnet:7.0
   pull: if-not-exists
+  commands:
+  - chmod a+x build.sh
+  - sh build.sh
