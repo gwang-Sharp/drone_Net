@@ -6,7 +6,8 @@ name: default
 server:
   host: 192.168.30.129
   user: root
-  password: wg380717.
+  password:
+      from_secret: password
 steps:
 - name: buildProject
   commands:
