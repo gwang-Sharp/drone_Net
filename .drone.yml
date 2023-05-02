@@ -10,5 +10,6 @@ steps:
   image: mcr.microsoft.com/dotnet/aspnet:7.0
   pull: if-not-exists
   commands:
+  - /bin/bash
   - chmod a+x build.sh
   - sh build.sh

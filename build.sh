@@ -1,2 +1,1 @@
-﻿#!/bin/sh
-docker ps
+﻿docker ps
